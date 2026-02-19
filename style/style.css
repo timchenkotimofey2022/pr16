@@ -961,7 +961,7 @@ footer {
 
 .soc_seti {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   margin-bottom: 2rem;
 }
 
@@ -1025,7 +1025,7 @@ footer {
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
   .grid_sec1 {
     grid-template-columns: 1fr;
     text-align: center;
@@ -1092,52 +1092,17 @@ footer {
   .info_footer {
     gap: 3rem;
   }
+  .button-group{
+    gap: 1rem;
+    margin-bottom: 3rem;
+    width:100rem;
+    display: flex;
+    flex-direction: row;
+    margin-left: 15rem;
+  }
 }
 
-@media (max-width: 992px) {
-  .grid {
-    grid-template-columns: 1fr;
-    gap: 4rem;
-    min-height: auto;
-  }
-  
-  .one_phone,
-  .two_phone,
-  .thre_phone {
-    order: -1;
-  }
-  
-  .one, .two, .thre {
-    text-align: center;
-    margin: 0 auto;
-  }
-  
-  .otzivi {
-    grid-template-columns: 1fr;
-    max-width: 50rem;
-    margin: 0 auto;
-  }
-  
-  .preimushestva {
-    grid-template-columns: 1fr;
-    max-width: 50rem;
-  }
-  
-  .info_footer {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .info_small {
-    width: 100%;
-    max-width: 30rem;
-  }
-  
-  .soc_seti {
-    justify-content: center;
-  }
-}
+
 
 @media (max-width: 768px) {
   header {
@@ -1193,9 +1158,6 @@ footer {
     text-align: center;
   }
   
-  .white_but {
-    margin-left: 0;
-  }
   
   .carts {
     grid-template-columns: 1fr;
