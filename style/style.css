@@ -1000,6 +1000,10 @@ footer {
   cursor: pointer;
   transition: color var(--transition);
 }
+.burgermenu{
+  width: 0rem;
+  position: absolute;
+}
 @media (max-width: 1440px) {
   html {
     font-size: 9px;
@@ -1213,6 +1217,15 @@ footer {
     font-size: 1.6rem;
     margin-bottom: 1.8rem;
   }
+  .header_right {
+    display: none;
+  }
+  .burgermenu{
+    width: 4rem;
+    position: absolute;
+    margin-top: -1rem;
+    margin-left: 76rem;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1290,8 +1303,8 @@ footer {
   .one_phone::before,
   .two_phone::before,
   .thre_phone::before {
-    width: 30rem;
-    height: 30rem;
+    width: 25rem;
+    height: 25rem;
   }
   
   .one_phone::after,
@@ -1369,6 +1382,12 @@ footer {
   }
   .white_but sec1_but{
     margin-right: 1rem;
+  }
+  .burgermenu{
+    width: 4rem;
+    position: absolute;
+    margin-top: -1rem;
+    margin-left: 40rem;
   }
 }
 @media (prefers-reduced-motion: reduce) {
