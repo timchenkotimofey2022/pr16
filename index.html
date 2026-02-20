@@ -441,15 +441,15 @@ header { background: #ffffff; height: 96px; }
         <p class="text_sec6">Здоровые, вкусные и простые в приготовлении блюда ждут вас. Начните питаться правильно уже сегодня. Вы можете отменить или приостановить подписку в любое время. А первый обед за наш счет!</p>
       <div class="validation">
         <div class="input">
-          <p class="input_name">Ваше имя</p>
-          <input type="text">
+          <label for="name" class="input_name">Ваше имя </label>
+           <input type="text" id="name" name="name" placeholder="Иванов Иван" required aria-required="true">
         </div>
         <div class="input">
-          <p class="input_name">Ваша почта</p>
-          <input type="text">
+          <label for="email" class="input_name">Ваша почта </label>
+          <input type="email" id="email" name="email" placeholder="IvanovIvan@mail.com" required aria-required="true">
         </div>
         <div class="input">
-          <p class="input_name">Откуда вы получили про нас информацию?</p>
+          <p class="input_name">Откуда вы получили о нас информацию?</p>
           <input type="text">
         </div>
         <button class="but_sec6">Отправить</button>
