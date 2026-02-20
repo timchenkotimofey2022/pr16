@@ -925,7 +925,6 @@ button {
 
 .eating {
   width: 100%;
-  height: 100%;
   object-fit: cover;
   aspect-ratio: 388/584;
 }
@@ -1089,9 +1088,7 @@ footer {
     flex-direction: column;
   }
   
-  .sec6_right {
-    display: none;
-  }
+  
   
   .info_footer {
     gap: 3rem;
@@ -1202,7 +1199,14 @@ footer {
   .sec6_left {
     padding: 3rem 2rem;
   }
-  
+  .sec6_right{
+    max-width: 90rem;
+    object-fit: cover;
+  }
+  .eating{
+    width: 100%;
+    height: 60rem;
+  }
   .h2_request6 {
     font-size: 3rem;
   }
@@ -1228,73 +1232,19 @@ footer {
   }
 }
 
-@media (max-width: 576px) {
-  html {
-    font-size: 8px;
-  }
-  
-  .header_right {
-    display: none;
-  }
-  
-  .deliver {
-    font-size: 3.2rem;
-  }
-  
-  .sec1_but {
-    max-width: 28rem;
-    font-size: 1.7rem;
-    padding: 1.2rem 1.5rem;
-    min-height: 5.2rem;
-  }
-  
-  .company_container {
-    gap: 2rem;
-  }
-  
-  .logos {
-    height: 2.5rem;
-  }
-  
-  .fotki {
-    grid-template-columns: 1fr;
-    max-width: 30rem;
-    margin: 0 auto;
-  }
-  
-  .photo_sec4:hover {
-    transform: scale(1.05);
-  }
-  
-  .podpiska1, 
-  .podpiska2 {
-    min-height: 58rem;
-    padding: 3rem 2rem 4rem;
-  }
-  
-  .price_text {
-    font-size: 5rem;
-  }
-  
-  .valuta {
-    font-size: 2.5rem;
-  }
-  
-  .in_week {
-    font-size: 1.4rem;
-  }
-  
-  .sec5_li {
-    font-size: 1.5rem;
-  }
-}
+
 
 @media (max-width: 390px) {
   .company_container {
     flex-direction: column;
     align-items: center;
   }
-  
+  html {
+    font-size: 8px;
+  }
+  .deliver {
+    font-size: 3.2rem;
+  }
   .logos {
     height: 3rem;
     max-width: 20rem;
@@ -1388,6 +1338,14 @@ footer {
     position: absolute;
     margin-top: -1rem;
     margin-left: 40rem;
+  }
+  .eating{
+    width: 100%;
+    height: 42rem;
+  }
+  .sec6{
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
 @media (prefers-reduced-motion: reduce) {
