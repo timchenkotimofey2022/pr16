@@ -12,17 +12,30 @@ header { background: #ffffff; height: 96px; }
 </style>
   </head>
   <body>
-    <header>
-      <img class="logo" src="img/omnifood-logo.webp" alt="Логотип" />
-      <div class="header_right">
-        <a href="#" class="headname">Как это работает</a>
-        <a href="#" class="headname">Рецепты</a>
-        <a href="#" class="headname">Отзывы</a>
-        <a href="#" class="headname">Цены</a>
-        <button class="orange_but headname">Попробовать</button>
-      </div>
-      <img class="burgermenu" src="img/burgermenu.svg" alt="бургер-меню">
-    </header>
+   <header>
+  <!-- ВАЖНО: чекбокс должен быть на том же уровне, что и меню -->
+  <input type="checkbox" id="burger-toggle" class="burger-checkbox">
+  
+  <div class="header-container">
+    <img class="logo" src="img/omnifood-logo.webp" alt="Логотип" />
+    
+    <!-- Лейбл привязан к чекбоксу через for="burger-toggle" -->
+    <label for="burger-toggle" class="burger-menu" aria-label="Открыть меню">
+      <span class="burger-line"></span>
+      <span class="burger-line"></span>
+      <span class="burger-line"></span>
+    </label>
+  </div>
+  
+  <!-- Меню - сосед чекбокса (не внутри header-container!) -->
+  <nav class="header_right">
+    <a href="#" class="headname">Как это работает</a>
+    <a href="#" class="headname">Рецепты</a>
+    <a href="#" class="headname">Отзывы</a>
+    <a href="#" class="headname">Цены</a>
+    <button class="orange_but headname">Попробовать</button>
+  </nav>
+</header>
 	  <main>
     <section class="healthy_food_dilevery">
       <div class="container grid_sec1">
@@ -462,51 +475,58 @@ header { background: #ffffff; height: 96px; }
     </section>
 		</main>
     <footer>
-      <div class="info_footer">
-        <div class="info_small">
-          <img src="img/omnifood-logo.webp" alt="Логотип" class="logo_footer">
-          <div class="soc_seti">
-            <img src="img/inst.svg" alt="Insagram" class="soc">
-            <img src="img/fsboock.svg" alt="Faceboock" class="soc">
-            <img src="img/twitter.svg" alt="Twitter" class="soc">
-            <div class="text_footer"><p class="t_f">Авторские права © 2027 ООО "Омнифуд". Все права защищены.</p></div>
-          </div>
-        </div>
-        <div class="info_small">
-          <p class="big_t_footer">Связаться с нами</p>
-          <div class="text_footer">
-            <p class="t_f2">ул. Примерная, д. 123, 2 этаж, Москва, 123456</p>
-            <p class="t_f2">+7 (495) 123-45-67 hello@omnifood.com</p>
-          </div>
-        </div>
-         <div class="info_small">
-          <p class="big_t_footer">Аккаунт</p>
-          <div class="text_footer">
-            <p class="t_f3">Создать аккаунт</p>
-            <p class="t_f3">Войти</p>
-            <p class="t_f3">Приложение iOs</p>
-            <p class="t_f3">Приложение Android</p>
-          </div>
-        </div>
-         <div class="info_small">
-          <p class="big_t_footer">Компания</p>
-          <div class="text_footer">
-            <p class="t_f3">О нас</p>
-            <p class="t_f3">Для бизнеса</p>
-            <p class="t_f3">Наши поставщики</p>
-            <p class="t_f3">Карьера</p>
-          </div>
-        </div>
-        <div class="info_small">
-          <p class="big_t_footer">Ресурсы</p>
-          <div class="text_footer">
-            <p class="t_f3">Сборник рецептов</p>
-            <p class="t_f3">Служба поддержки</p>
-            <p class="t_f3">Политика конфиденциальности и условия пользования</p>
-          </div>
-        </div>
+  <div class="info_footer">
+    <div class="info_small">
+      <img src="img/omnifood-logo.webp" alt="Логотип" class="logo_footer">
+      <div class="soc_seti">
+        <img src="img/inst.svg" alt="Instagram" class="soc">
+        <img src="img/fsboock.svg" alt="Facebook" class="soc">
+        <img src="img/twitter.svg" alt="Twitter" class="soc">
       </div>
-    </footer>
-  </body>
+      <div class="text_footer">
+        <p class="t_f">Авторские права © 2027 ООО "Омнифуд". Все права защищены.</p>
+      </div>
+    </div>
 
+    <div class="info_small">
+      <p class="big_t_footer">Связаться с нами</p>
+      <div class="text_footer">
+        <p class="t_f2">ул. Примерная, д. 123, 2 этаж, Москва, 123456</p>
+        <p class="t_f2">+7 (495) 123-45-67</p>
+        <p class="t_f2">hello@omnifood.com</p>
+      </div>
+    </div>
+
+    <div class="info_small">
+      <p class="big_t_footer">Аккаунт</p>
+      <div class="text_footer">
+        <p class="t_f3">Создать аккаунт</p>
+        <p class="t_f3">Войти</p>
+        <p class="t_f3">Приложение iOS</p>
+        <p class="t_f3">Приложение Android</p>
+      </div>
+    </div>
+
+    <div class="info_small">
+      <p class="big_t_footer">Компания</p>
+      <div class="text_footer">
+        <p class="t_f3">О нас</p>
+        <p class="t_f3">Для бизнеса</p>
+        <p class="t_f3">Наши поставщики</p>
+        <p class="t_f3">Карьера</p>
+      </div>
+    </div>
+
+    <div class="info_small">
+      <p class="big_t_footer">Ресурсы</p>
+      <div class="text_footer">
+        <p class="t_f3">Сборник рецептов</p>
+        <p class="t_f3">Служба поддержки</p>
+        <p class="t_f3">Политика конфиденциальности</p>
+        <p class="t_f3">Условия пользования</p>
+      </div>
+    </div>
+  </div>
+</footer>
+  </body>
 </html>
