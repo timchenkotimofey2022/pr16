@@ -450,11 +450,11 @@ header { background: #ffffff; height: 96px; }
       <div class="validation">
         <div class="input">
           <label for="name" class="input_name">Ваше имя </label>
-           <input type="text" name="full-name" pattern="[A-Za-z\s\-]{2,50}" title="Только буквы, пробелы и дефисы" placeholder="Иванов Иван" required>
+           <input type="text" id="name" name="full-name" pattern="[A-Za-z\s\-]{2,50}" title="Только буквы, пробелы и дефисы" placeholder="Иванов Иван" required>
         </div>
         <div class="input">
           <label for="email" class="input_name">Ваша почта </label>
-          <input type="email" name="email" placeholder="IvanovIvan@mail.com" required aria-required="true">
+          <input type="email" id="email" name="email" placeholder="IvanovIvan@mail.com" required>
         </div>
         <div class="input">
           <label for="text" class="input_name">Откуда вы получили о нас информацию?</label>
