@@ -13,21 +13,15 @@ header { background: #ffffff; height: 96px; }
   </head>
   <body>
    <header>
-  <!-- ВАЖНО: чекбокс должен быть на том же уровне, что и меню -->
   <input type="checkbox" id="burger-toggle" class="burger-checkbox">
-  
   <div class="header-container">
     <img class="logo" src="img/omnifood-logo.webp" alt="Логотип" />
-    
-    <!-- Лейбл привязан к чекбоксу через for="burger-toggle" -->
     <label for="burger-toggle" class="burger-menu" aria-label="Открыть меню">
       <span class="burger-line"></span>
       <span class="burger-line"></span>
       <span class="burger-line"></span>
     </label>
   </div>
-  
-  <!-- Меню - сосед чекбокса (не внутри header-container!) -->
   <nav class="header_right">
     <a href="#" class="headname">Как это работает</a>
     <a href="#" class="headname">Рецепты</a>
