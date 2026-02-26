@@ -5,7 +5,8 @@
     <link rel="stylesheet" href="style/style.css">
     <title>omnifood</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
-	 <meta name="description" content="omnifood">
+	<meta name="description" content="omnifood">
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.tailwindcss.com https://unpkg.com;">
   <style>
 header { background: #ffffff; height: 96px; }
 .hero { background: #fdf2e9; padding: 48px 0; }
@@ -449,15 +450,15 @@ header { background: #ffffff; height: 96px; }
       <div class="validation">
         <div class="input">
           <label for="name" class="input_name">Ваше имя </label>
-           <input type="text" id="name" name="name" placeholder="Иванов Иван" required aria-required="true">
+           <input type="text" name="full-name" pattern="[A-Za-z\s\-]{2,50}" title="Только буквы, пробелы и дефисы" placeholder="Иванов Иван" required>
         </div>
         <div class="input">
           <label for="email" class="input_name">Ваша почта </label>
-          <input type="email" id="email" name="email" placeholder="IvanovIvan@mail.com" required aria-required="true">
+          <input type="email" name="email" placeholder="IvanovIvan@mail.com" required aria-required="true">
         </div>
         <div class="input">
           <label for="text" class="input_name">Откуда вы получили о нас информацию?</label>
-          <input type="text" id="where" name="where" placeholder="?" required aria-required="true">
+          <input type="text" id="where" name="where" placeholder="?" required>
         </div>
         <button class="but_sec6">Отправить</button>
         </div>
